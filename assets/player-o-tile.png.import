@@ -2,15 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjwqg5eedw50g"
-valid=false
+uid="uid://b0jrrlihwan1x"
+path="res://.godot/imported/player-o-tile.png-2796a5232335b79d75d24141a9f18a41.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://1008289.svg"
+source_file="res://assets/player-o-tile.png"
+dest_files=["res://.godot/imported/player-o-tile.png-2796a5232335b79d75d24141a9f18a41.ctex"]
+
 [params]
 
-compress/mode=4
+compress/mode=0
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/bptc_ldr=0
@@ -27,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false
