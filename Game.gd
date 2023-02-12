@@ -33,6 +33,8 @@ func initiate_player() -> void:
 	player = "x"
 
 func _ready() -> void:
+	$GameOverMessage.hide()
 	initiate_board()
+	initiate_player()
 		
 	
