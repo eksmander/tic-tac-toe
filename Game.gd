@@ -37,4 +37,24 @@ func _ready() -> void:
 	initiate_board()
 	initiate_player()
 		
+func update_player() -> void:
+	if player == "x":
+		player == "o"
+	else: 
+		player == "x"
+		
+func is_row_matched() -> bool:
+	var offset = 0
+	for row in range(3):
+		for index in range(0 + offset, 3 + offset):
+			if board[index] == player:
+				is_winner = true
+			else:
+				is_winner = false
+				break
+		if is_winner:
+			return true
+		offset += 3
+	return false
 	
+func is_col_matched() -> bool:
