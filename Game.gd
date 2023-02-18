@@ -58,3 +58,50 @@ func is_row_matched() -> bool:
 	return false
 	
 func is_col_matched() -> bool:
+	var offset = 0
+	for col in range(3):
+		for index in range(0 + offset, 7 + offset, 3):
+			if board[index] == player:
+				is_winner = true
+			else:
+				is_winner = false
+				break
+		if is_winner:
+			return true
+		offset += 1
+	return false
+	
+func is_diag_matched() -> bool:
+	for i in range(0, 9, 4):
+		if board[i] == player:
+			is_winner = true
+		else:
+			is_winner = false
+			break
+	if is_winner:
+		return true
+	for i in range(2, 7, 2):
+		if board[i] == player:
+			is_winner = true
+		else:
+			is_winner = false
+			break
+	if is_winner:
+		return true
+	return false
+	
+func is_board_full() -> bool:
+	if board.has("0"):
+		return false
+	return true
+	
+func check_gameover() -> void:
+	if is_row_matched() || is_col_matched() || is_diag_matched():
+		is_gameover = true
+		add_gameover_message()
+	elif is_board_full():
+		is_gameover = true
+		is_draw = true
+		add_gameover_message()
+		
+func add_
