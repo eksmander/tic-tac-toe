@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://chy2tjpmpali"]
+[gd_scene load_steps=2 format=3 uid="uid://bbd2h08jqc4r"]
 
-[ext_resource type="FontFile" uid="uid://otrcy1xpjv3u" path="res://assets/Kenney Pixel.ttf" id="1_hdmsf"]
+[ext_resource type="FontFile" uid="uid://otrcy1xpjv3u" path="res://assets/Kenney Pixel.ttf" id="1_tgwyv"]
 
 [node name="GameOverMessage" type="Control"]
 layout_mode = 3
@@ -23,9 +23,9 @@ grow_vertical = 2
 
 [node name="Label" type="Label" parent="Container"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("1_hdmsf")
+theme_override_fonts/font = ExtResource("1_tgwyv")
 
 [node name="Button" type="Button" parent="Container"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("1_hdmsf")
+theme_override_fonts/font = ExtResource("1_tgwyv")
 text = "restart"
